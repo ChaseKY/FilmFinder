@@ -68,29 +68,43 @@ body p {
 }
 
 .formContainer {
+	display:grid;
+	justify-content: center;
+}
+
+.primaryAndSecondary {
 	display: flex;
+	margin-left: -2%;
+	margin-right: -2%;
+	
 }
 
 .primaryOptions {
-	padding: 2%;
+	width: 50%;
+	margin: 2%;
 }
 
 .secondaryOptions {
-	padding: 2%;
+	width: 50%;
+	margin: 2%;
+}
+
+.btnDiv{
+	display: block;
 }
 .searchButton {
 	background-color: #f2dcc5;
 }
 
-.hide {
+/* .hide {
 	display: none;
-}
+} */
 
 .box {
 	animation-duration: 3s;
 	animation-name: slidein;
 	animation-fill-mode: forwards;
-	animation-delay: 1.5s;
+	/* animation-delay: 1.5s; */
 
   }
   
@@ -101,7 +115,7 @@ body p {
 	}
   
 	to {
-	  margin-top: -50%;
+	  margin-top: -90%;
 	  width: 100%;
 	}
   }
