@@ -19,6 +19,7 @@ body p {
 
 .box {
 	display: flex;
+	width: 100%;
 }
 
 .box .inner {
@@ -85,3 +86,26 @@ body p {
 	display: none;
 }
 
+.box {
+	animation-duration: 3s;
+	animation-name: slidein;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
+
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-top: 0%;
+	  width: 100%;
+	}
+  
+	to {
+	  margin-top: -50%;
+	  width: 100%;
+	}
+  }
+
+/* #title {
+	display: flex;
+} */
