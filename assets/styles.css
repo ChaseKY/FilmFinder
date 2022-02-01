@@ -65,3 +65,23 @@ body p {
 		left: -100%;
 	}
 }
+
+.formContainer {
+	display: flex;
+}
+
+.primaryOptions {
+	padding: 2%;
+}
+
+.secondaryOptions {
+	padding: 2%;
+}
+.searchButton {
+	background-color: #f2dcc5;
+}
+
+.hide {
+	display: none;
+}
+
