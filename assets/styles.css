@@ -101,7 +101,7 @@ body p {
 } */
 
 .box {
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-name: slidein;
 	animation-fill-mode: forwards;
 	/* animation-delay: 1.5s; */
@@ -110,14 +110,13 @@ body p {
   
   @keyframes slidein {
 	from {
-	  margin-top: 0%;
-	  width: 100%;
+		transform: translateY(-150%);
+		opacity: 0;
 	}
   
 	to {
-	  margin-top: -90%;
-	  width: 100%;
-	}
+		transform: translateY(0%);
+		opacity: 1;
   }
 
 /* #title {
