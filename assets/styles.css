@@ -122,10 +122,13 @@ div {
  } 
  
 #container {
-	margin: 0;
-	display: inline-block;
-	align-items: center;
+	margin: 2px;
+	background: none;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
 	justify-content: center;
+	align-items: center;
 }
 
 
@@ -151,8 +154,19 @@ div {
 /* button styling */
 
 button {
+	display: flex
 	border: none;
 	background: none;
 	width: 7vh;
 	height: 5vh;
+}
+
+.btn {
+	display: flex;
+	background: none;
+	width: auto;
+	height: auto;
+	margin: 0;
+	flex: 1;
+	flex-basis: 50%;
 }
