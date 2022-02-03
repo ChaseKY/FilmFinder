@@ -8,6 +8,12 @@ header {
 	background-color: #f2dcc5;
 }
 
+body {
+	margin: 0;
+	align-items: center;
+	justify-content: center;
+}
+
 body p {
     color: #40817a;
     font-size: 18pt;
@@ -68,8 +74,9 @@ body p {
 }
 
 .formContainer {
-	display:grid;
+	display: grid;
 	justify-content: center;
+	align-items: center;
 }
 
 .primaryAndSecondary {
@@ -107,6 +114,24 @@ body p {
 	/* animation-delay: 1.5s; */
 
   }
+
+div {
+	 display: block;
+	 justify-content: center;
+	 align-items: center;
+ } 
+ 
+#container {
+	margin: 0;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+}
+
+
+ .containerDiv {
+	  display: inline-block;
+  }
   
   @keyframes slidein {
 	from {
@@ -122,3 +147,12 @@ body p {
 /* #title {
 	display: flex;
 } */
+
+/* button styling */
+
+button {
+	border: none;
+	background: none;
+	width: 7vh;
+	height: 5vh;
+}
