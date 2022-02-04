@@ -1,6 +1,12 @@
 var buttons = document.querySelector("#container");
 var genre = document.querySelector(".btn");
 var value = genre.getAttribute("data-value");
+var movieArray = [];
+var userInputRated = ''
+var userInputRuntime = ''
+var userInputReviews = ''
+var movieTitle = ''
+
 
 buttons.addEventListener("click", getGenre)
     
@@ -22,7 +28,7 @@ function getGenre(event) {
 	for (let i = 0; i < resultsArray.length; i++) {
 		var imdbID = data.results[i].imdb_id
 		var title = data.results[i].title
-		passAlongData(imdbID, title)
+		passAlongData(imdbID)
 	}
 })
 // .catch(err => {
@@ -31,12 +37,40 @@ function getGenre(event) {
 
 }
 
-function passAlongData(iD, movieTitle) {
+function passAlongData(iD) {
 	fetch('http://www.omdbapi.com/?apikey=62f860e8&i=' + iD)
 	.then(response => {
 		return response.json();
 	})
 	.then(data => {
-		console.log(data)
+		// console.log(data)
+		movieArray.push({title: data.Title, rated: data.Rated, runtime: data.Runtime, reviews: data.imdbRating});
+		console.log(movieArray)
+
+		for (let index = 0; index < movieArray.length; index++) {
+			var ratedCategory = movieArray[index].rated
+			var runtimeCategory = movieArray[index].runtime
+			var titleCategory = movieArray[index].title
+			var reviewsCategory = movieArray[index].reviews
+		
+		
+			console.log(ratedCategory)
+			console.log(runtimeCategory)
+			console.log(titleCategory)
+			console.log(reviewsCategory)
+		}	
 	})
 }
+
+// for (let index = 0; index < movieArray.length; index++) {
+// 	var ratedCategory = movieArray[index].rated
+// 	var runtimeCategory = movieArray[index].runtime
+// 	var titleCategory = movieArray[index].title
+// 	var reviewsCategory = movieArray[index].reviews
+
+
+// 	console.log(ratedCategory)
+// 	console.log(runtimeCategory)
+// 	console.log(titleCategory)
+// 	console.log(reviewsCategory)
+// }	
