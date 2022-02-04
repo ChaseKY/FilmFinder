@@ -173,28 +173,28 @@ button {
 	flex-basis: 50%;
 }
 
-.g-Rating {
+.G {
 	background-image: url("./Images/g-Rating.png");
 
 }
 
-.pg-Rating {
+.PG{
 	background-image: url("./Images/pg-Rating.png");
 }
 
-.pg13-Rating {
+.PG-13 {
 	background-image: url("./Images/pg13-rating.png");
 }
 
-.r-Rating {
+.R{
 	background-image: url("./Images/r-Rating.png");
 }
 
-.nc17-Rating {
+.NC-17 {
 	background-image: url("./Images/nc17-Rating.png");
 }
 
-#sub-container {
+.sub-container {
 	margin: 3vh;
 	background: none;
 	display: flex;
@@ -222,4 +222,8 @@ button {
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+.hide {
+	display: none;
 }
