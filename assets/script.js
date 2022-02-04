@@ -27,10 +27,11 @@ function getGenre(event) {
     var resultsArray = data.results
 	for (let i = 0; i < resultsArray.length; i++) {
 		var imdbID = data.results[i].imdb_id
-		var title = data.results[i].title
 		passAlongData(imdbID)
 	}
+	
 })
+	
 // .catch(err => {
 // 	console.error(err);
 // });
@@ -43,25 +44,16 @@ function passAlongData(iD) {
 		return response.json();
 	})
 	.then(data => {
-		// console.log(data)
-		movieArray.push({title: data.Title, rated: data.Rated, runtime: data.Runtime, reviews: data.imdbRating});
-		console.log(movieArray)
-
-		for (let index = 0; index < movieArray.length; index++) {
-			var ratedCategory = movieArray[index].rated
-			var runtimeCategory = movieArray[index].runtime
-			var titleCategory = movieArray[index].title
-			var reviewsCategory = movieArray[index].reviews
-		
-		
-			console.log(ratedCategory)
-			console.log(runtimeCategory)
-			console.log(titleCategory)
-			console.log(reviewsCategory)
-		}	
+		console.log(data)
+		//movieArray.push({title: data.Title, rated: data.Rated, runtime: data.Runtime, reviews: data.imdbRating});
+		// console.log(movieArray)
+		if (data.Rated == 'The Suicide Squad') {
+		   localStorage.setItem('title',)	
+		}
 	})
 }
 
+console.log(movieArray)
 // for (let index = 0; index < movieArray.length; index++) {
 // 	var ratedCategory = movieArray[index].rated
 // 	var runtimeCategory = movieArray[index].runtime
