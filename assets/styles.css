@@ -138,14 +138,14 @@ div {
   
   @keyframes slidein {
 	from {
-		transform: translateY(-150%);
+		transform: translateY(150%);
 		opacity: 0;
 	}
   
 	to {
-		transform: translateY(-20%);
+		transform: translateY(20%);
 		opacity: 1;
-  }
+  	}
   }
 /* #title {
 	display: flex;
@@ -163,6 +163,8 @@ button {
 
 .btn {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: none;
 	width: auto;
 	height: auto;

@@ -6,7 +6,7 @@ buttons.addEventListener("click", getGenre)
     
 
 function getGenre(event) {
-    console.log(event.target)
+    // console.log(event.target)
     var genreInput = event.target.getAttribute("data-value")
     fetch(`https://data-imdb1.p.rapidapi.com/movie/byGen/${genreInput}/?page_size=50`, {
 	"method": "GET",
@@ -16,7 +16,7 @@ function getGenre(event) {
 	}
 })
 .then(response => {
-	console.log(response);
+	// console.log(response);
     return response.json();
 })
 .then(data => {
