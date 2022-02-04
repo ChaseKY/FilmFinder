@@ -6,9 +6,8 @@ buttons.addEventListener("click", getGenre)
     
 
 function getGenre(event) {
-    // console.log(event.target)
     var genreInput = event.target.getAttribute("data-value")
-    fetch(`https://data-imdb1.p.rapidapi.com/movie/byGen/${genreInput}/?page_size=50`, {
+    fetch(`https://data-imdb1.p.rapidapi.com/movie/byGen/${genreInput}/?page_size=5`, {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "data-imdb1.p.rapidapi.com",
@@ -16,13 +15,28 @@ function getGenre(event) {
 	}
 })
 .then(response => {
-	// console.log(response);
-    return response.json();
+	return response.json();
 })
 .then(data => {
-    console.log(data);
+    var resultsArray = data.results
+	for (let i = 0; i < resultsArray.length; i++) {
+		var imdbID = data.results[i].imdb_id
+		var title = data.results[i].title
+		passAlongData(imdbID, title)
+	}
 })
-.catch(err => {
-	console.error(err);
-});
+// .catch(err => {
+// 	console.error(err);
+// });
+
+}
+
+function passAlongData(iD, movieTitle) {
+	fetch('http://www.omdbapi.com/?apikey=62f860e8&i=' + iD)
+	.then(response => {
+		return response.json();
+	})
+	.then(data => {
+		console.log(data)
+	})
 }
