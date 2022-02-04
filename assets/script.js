@@ -1,6 +1,8 @@
 var buttons = document.querySelector("#container");
 var genre = document.querySelector(".btn");
 var value = genre.getAttribute("data-value");
+var movieRating = document.querySelector(".ratedBtn");
+var ratingValue = movieRating.getAttribute("data-value");
 var movieArray = [];
 var userInputRated = ''
 var userInputRuntime = ''
@@ -52,7 +54,6 @@ function passAlongData(iD) {
 		}
 	})
 }
-
 console.log(movieArray)
 // for (let index = 0; index < movieArray.length; index++) {
 // 	var ratedCategory = movieArray[index].rated
