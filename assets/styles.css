@@ -154,7 +154,7 @@ div {
 /* button styling */
 
 button {
-	display: flex
+	display: flex;
 	border: none;
 	background: none;
 	width: 7vh;
@@ -171,4 +171,55 @@ button {
 	margin: 0;
 	flex: 1;
 	flex-basis: 50%;
+}
+
+.g-Rating {
+	background-image: url("./Images/g-Rating.png");
+
+}
+
+.pg-Rating {
+	background-image: url("./Images/pg-Rating.png");
+}
+
+.pg13-Rating {
+	background-image: url("./Images/pg13-rating.png");
+}
+
+.r-Rating {
+	background-image: url("./Images/r-Rating.png");
+}
+
+.nc17-Rating {
+	background-image: url("./Images/nc17-Rating.png");
+}
+
+#sub-container {
+	margin: 3vh;
+	background: none;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.item {
+	margin: 3px;
+	padding: 3px;
+	height: 10vh;
+	width: 15vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.item2 {
+	margin: 3px;
+	padding: 3px;
+	height: 10vh;
+	width: 20vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
