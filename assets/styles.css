@@ -1,4 +1,18 @@
 /* Title code from https://codepen.io/comehope/pen/GdrrZq */
+
+@font-face {
+	font-family: 'Archive'; src: url("Archive.otf");
+}
+
+/* @font-face {
+	font-family: Archive; font-weight: bold; src: url("Archive.otf");
+} */
+
+h1 {
+	font-family: 'Archive';
+	font-size: 10vh;
+}
+
 html {
 	height: 100%;
 	display: flex;
@@ -173,27 +187,57 @@ button {
 	flex-basis: 50%;
 }
 
-.G {
+.g-rating {
 	background-image: url("./Images/g-Rating.png");
 	background-size: 100% 100%;
 
 }
 
-.PG{
+.pg-rating {
 	background-image: url("./Images/pg-Rating.png");
+	background-size: 100% 100%;
 }
 
-.PG-13 {
+.pg13-rating {
 	background-image: url("./Images/pg13-rating.png");
+	background-size: 100% 100%;
 }
 
-.R{
-	background-image: url("./Images/r-Rating.png");
+.r-rating {
+	background-image: url("./Images/r-rating.png");
+	background-size: 100% 100%;
 }
 
-.NC-17 {
-	background-image: url("./Images/nc17-Rating.png");
+.nc17-rating {
+	background-image: url("./Images/nc17-rating.png");
+	background-size: 100% 100%;
 }
+
+.eighties {
+	background-image: url("./Images/1980s.png");
+	background-size: 100% 100%;
+}
+
+.nineties {
+	background-image: url("./Images/1990s.png");
+	background-size: 100% 100%;
+}
+
+.y2k {
+	background-image: url("./Images/2000s.png");
+	background-size: 100% 100%;
+}
+
+.tens {
+	background-image: url("./Images/2010s.png");
+	background-size: 100% 100%;
+}
+
+.twenties {
+	background-image: url("./Images/2020s.png");
+	background-size: 100% 100%;
+}
+
 
 .sub-container {
 	margin: 3vh;
@@ -206,10 +250,10 @@ button {
 }
 
 .item {
-	margin: 3px;
+	margin: 10px;
 	padding: 3px;
 	height: 10vh;
-	width: 15vh;
+	width: 13vh;
     background-position: center;
     position: relative;
 }
@@ -217,8 +261,8 @@ button {
 .item2 {
 	margin: 3px;
 	padding: 3px;
-	height: 10vh;
-	width: 20vh;
+	height: 17vh;
+	width: 17vh;
     background-position: center;
     position: relative;
 }
