@@ -175,6 +175,7 @@ button {
 
 .g-Rating {
 	background-image: url("./Images/g-Rating.png");
+	background-size: 100% 100%;
 
 }
 
@@ -210,7 +211,6 @@ button {
 	height: 10vh;
 	width: 15vh;
     background-position: center;
-    background-size: cover;
     position: relative;
 }
 
@@ -220,6 +220,5 @@ button {
 	height: 10vh;
 	width: 20vh;
     background-position: center;
-    background-size: cover;
     position: relative;
 }
