@@ -25,6 +25,8 @@ function getGenre(event) {
 		"x-rapidapi-host": "data-imdb1.p.rapidapi.com",
 		"x-rapidapi-key": "279b04dcfemshc0a23d26e174c8ep132e8cjsn6c46292bbe34"
 	}
+
+
 })
 .then(response => {
 	return response.json();
@@ -39,6 +41,7 @@ function getGenre(event) {
 		btn.onclick = filterChoice;
 
 		document.getElementById('sub-container').append(btn)
+
 	})
 
 	for (let i = 0; i < resultsArray.length; i++) {
@@ -47,7 +50,7 @@ function getGenre(event) {
 	}
 	
 })
-	
+
 // .catch(err => {
 // 	console.error(err);
 // });
@@ -61,8 +64,9 @@ function passAlongData(iD) {
 	})
 	.then(data => {
 		//console.log(data)
-		movieArray.push({title: data.Title, rated: data.Rated, runtime: data.Runtime, reviews: data.imdbRating});
-		// console.log(movieArray)
+		movieArray.push({title: data.Title, rated: data.Rated, year: data.Year, reviews: data.imdbRating});
+		//console.log(movieArray)
+		// filterChoice(movieArray);
 	
 		
 		// if (data.Rated == 'The Suicide Squad') {

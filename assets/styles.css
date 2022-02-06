@@ -187,28 +187,28 @@ button {
 	flex-basis: 50%;
 }
 
-.g-rating {
+.G {
 	background-image: url("./Images/g-Rating.png");
 	background-size: 100% 100%;
 
 }
 
-.pg-rating {
+.PG {
 	background-image: url("./Images/pg-Rating.png");
 	background-size: 100% 100%;
 }
 
-.pg13-rating {
+.PG-13 {
 	background-image: url("./Images/pg13-rating.png");
 	background-size: 100% 100%;
 }
 
-.r-rating {
+.R {
 	background-image: url("./Images/r-rating.png");
 	background-size: 100% 100%;
 }
 
-.nc17-rating {
+.NC-17 {
 	background-image: url("./Images/nc17-rating.png");
 	background-size: 100% 100%;
 }
