@@ -12,6 +12,7 @@ var finalMovieArray = [];
 var ratingArr = ['G', 'PG', "PG-13", "R", "NC-17"];
 
 
+
 buttons.addEventListener("click", getGenre)
 
 function getGenre(event) {
@@ -24,7 +25,6 @@ function getGenre(event) {
 		"x-rapidapi-host": "data-imdb1.p.rapidapi.com",
 		"x-rapidapi-key": "279b04dcfemshc0a23d26e174c8ep132e8cjsn6c46292bbe34"
 	}
-
 
 })
 .then(response => {

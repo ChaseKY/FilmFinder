@@ -12,6 +12,9 @@ No installation is required.
 
 ## Usage
 
+When the page loads the user will see a list of genres to choose from. (Insert pic)
+After selecting a genre the user
+
 ## Credits
 Contributors:
     Chase: https://github.com/ChaseKY
