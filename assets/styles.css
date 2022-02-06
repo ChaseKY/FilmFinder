@@ -214,33 +214,43 @@ button {
 	background-size: 100% 100%;
 }
 
-.eighties {
+.year1980-1989 {
 	background-image: url("./Images/1980s.png");
 	background-size: 100% 100%;
 }
 
-.nineties {
+.year1990-1999 {
 	background-image: url("./Images/1990s.png");
 	background-size: 100% 100%;
 }
 
-.y2k {
+.year2000-2009 {
 	background-image: url("./Images/2000s.png");
 	background-size: 100% 100%;
 }
 
-.tens {
+.year2010-2019 {
 	background-image: url("./Images/2010s.png");
 	background-size: 100% 100%;
 }
 
-.twenties {
+.year2020-2022 {
 	background-image: url("./Images/2020s.png");
 	background-size: 100% 100%;
 }
 
 
 .sub-container {
+	margin: 3vh;
+	background: none;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.sub-container2 {
 	margin: 3vh;
 	background: none;
 	display: flex;
@@ -295,4 +305,20 @@ button {
 .logoContainer {
 	display: flex;
 	position: absolute;
+}
+
+.searchContainer {
+	display: flex;
+	align-items: center;
+}
+
+#search {
+	width: 15vh;
+	height: auto;
+}
+
+#search:hover {
+	opacity: 0.7;
+	width: 14.5vh;
+	height: auto;
 }
