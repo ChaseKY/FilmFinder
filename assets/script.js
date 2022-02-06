@@ -13,7 +13,6 @@ var ratingArr = ['G', 'PG', "PG-13", "R", "NC-17"];
 
 
 buttons.addEventListener("click", getGenre)
-    
 
 function getGenre(event) {
 	document.getElementById('sub-container').classList.remove('hide');
