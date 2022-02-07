@@ -83,7 +83,7 @@ body p {
 .box2 {
 	display: flex;
 	width: 100%;
-	margin-top: 15%;
+	margin-top: 22%;
 }
 
 .box2 .inner {
@@ -159,7 +159,6 @@ body p {
 	animation-duration: 4s;
 	animation-name: slidein;
 	animation-fill-mode: forwards;
-	/* animation-delay: 1.5s; */
 
   }
 
@@ -195,12 +194,6 @@ div {
 		opacity: 1;
   	}
   }
-
-/* #title {
-	display: flex;
-} */
-
-/* button styling */
 
 button {
 	display: flex;
@@ -531,7 +524,9 @@ button {
 }
 
 .card {
-	display: inline-flex
+	display: inline-flex;
+	padding: 10px;
+	
 }
 
 #resultsContainer {
