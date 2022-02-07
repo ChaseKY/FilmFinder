@@ -242,26 +242,91 @@ button {
 .year1980-1989 {
 	background-image: url("./Images/1980s.png");
 	background-size: 100% 100%;
+	opacity: 0.5;
+}
+
+.year1980-1989:hover {
+	background-image: url("./Images/1980s.png");
+	background-size: 100% 100%;
+	opacity: 1;
+}
+
+.year1980-1989:focus {
+	background-image: url("./Images/1980s.png");
+	background-size: 100% 100%;
+	opacity: 1;
 }
 
 .year1990-1999 {
 	background-image: url("./Images/1990s.png");
 	background-size: 100% 100%;
+	opacity: 0.5;
+}
+
+.year1990-1999:hover {
+	background-image: url("./Images/1990s.png");
+	background-size: 100% 100%;
+	opacity: 1;
+}
+
+.year1990-1999:focus {
+	background-image: url("./Images/1990s.png");
+	background-size: 100% 100%;
+	opacity: 1;
 }
 
 .year2000-2009 {
 	background-image: url("./Images/2000s.png");
 	background-size: 100% 100%;
+	opacity: 0.5;
+}
+
+.year2000-2009:hover {
+	background-image: url("./Images/2000s.png");
+	background-size: 100% 100%;
+	opacity: 1;
+}
+
+.year2000-2009:focus {
+	background-image: url("./Images/2000s.png");
+	background-size: 100% 100%;
+	opacity: 1;
 }
 
 .year2010-2019 {
 	background-image: url("./Images/2010s.png");
 	background-size: 100% 100%;
+	opacity: 0.5;
+}
+
+.year2010-2019:hover {
+	background-image: url("./Images/2010s.png");
+	background-size: 100% 100%;
+	opacity: 1;
+}
+
+.year2010-2019:focus {
+	background-image: url("./Images/2010s.png");
+	background-size: 100% 100%;
+	opacity: 1;
 }
 
 .year2020-2022 {
 	background-image: url("./Images/2020s.png");
 	background-size: 100% 100%;
+	opacity: 0.5;
+}
+
+.year2020-2022:hover {
+	background-image: url("./Images/2020s.png");
+	background-size: 100% 100%;
+	opacity: 1;
+}
+
+.year2020-2022:focus {
+	background-image: url("./Images/2020s.png");
+	background-size: 100% 100%;
+	opacity: 1;
 }
 
 
