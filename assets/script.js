@@ -290,4 +290,3 @@ function finalQuery(chosenRating,choseYear){
 	console.log(finalMovieArray)
 	console.log(veryFinalMovieArray)
 }
-

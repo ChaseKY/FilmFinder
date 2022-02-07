@@ -26,6 +26,7 @@ body {
 	margin: 0;
 	align-items: center;
 	justify-content: center;
+	background-color: unset;
 }
 
 body p {
@@ -413,3 +414,9 @@ button {
 	height: auto;
 }
 
+.movieContainer {
+	margin-top: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
