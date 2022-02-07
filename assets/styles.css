@@ -1,13 +1,5 @@
 /* Title code from https://codepen.io/comehope/pen/GdrrZq */
 
-@font-face {
-	font-family: 'Archive'; src: url("Archive.otf");
-}
-
-/* @font-face {
-	font-family: Archive; font-weight: bold; src: url("Archive.otf");
-} */
-
 h1 {
 	font-family: 'Archive';
 	font-size: 10vh;
@@ -153,7 +145,7 @@ div {
   
   @keyframes slidein {
 	from {
-		transform: translateY(150%);
+		transform: translateY(250%);
 		opacity: 0;
 	}
   
@@ -177,6 +169,11 @@ button {
 	height: 5vh;
 }
 
+.finder {
+	background-image: url("./Images/button-image.png");
+	background-size: 100% 100%;
+}
+
 .btn {
 	display: flex;
 	justify-content: center;
@@ -189,9 +186,14 @@ button {
 	flex-basis: 50%;
 }
 
+.btn:hover {
+	cursor: pointer;
+}
+
 .G {
 	background-image: url("./Images/g-Rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 
 }
 
@@ -203,6 +205,7 @@ button {
 .PG {
 	background-image: url("./Images/pg-Rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 .PG:hover {
@@ -213,6 +216,7 @@ button {
 .PG-13 {
 	background-image: url("./Images/pg13-rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 .PG-13:hover {
@@ -223,6 +227,7 @@ button {
 .R {
 	background-image: url("./Images/r-rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 .R:hover {
@@ -233,6 +238,7 @@ button {
 .NC-17 {
 	background-image: url("./Images/nc17-rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 .NC-17:hover {
@@ -243,7 +249,9 @@ button {
 .year1980-1989 {
 	background-image: url("./Images/1980s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
+
 }
 
 .year1980-1989:hover {
@@ -261,7 +269,8 @@ button {
 .year1990-1999 {
 	background-image: url("./Images/1990s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
 }
 
 .year1990-1999:hover {
@@ -279,7 +288,8 @@ button {
 .year2000-2009 {
 	background-image: url("./Images/2000s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
 }
 
 .year2000-2009:hover {
@@ -297,7 +307,8 @@ button {
 .year2010-2019 {
 	background-image: url("./Images/2010s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
 }
 
 .year2010-2019:hover {
@@ -315,7 +326,8 @@ button {
 .year2020-2022 {
 	background-image: url("./Images/2020s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
 }
 
 .year2020-2022:hover {
@@ -384,6 +396,14 @@ button {
     position: relative;
 }
 
+.item3 {
+	margin-top: 10px;
+	height: 5vh;
+	width: 10vh;
+	background-position: center;
+	position: relative;
+}
+
 .hide {
 	display: none;
 }
@@ -405,13 +425,11 @@ button {
 
 #search {
 	width: 15vh;
-	height: auto;
+	height: 10vh;
 }
 
 #search:hover {
-	opacity: 0.7;
-	width: 14.5vh;
-	height: auto;
+	cursor: pointer;
 }
 
 .movieContainer {
@@ -419,4 +437,54 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.75;
+	}
+
+	75% {
+		opacity: 0.8;
+	}
+
+	100% {
+		opacity: 1;
+	}	
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.75;
+	}
+
+	75% {
+		opacity: 0.8;
+	}
+
+	100% {
+		opacity: 1;
+	}	
+}
+
+.splash {
+	opacity: 1;
+	-webkit-animation: fadeIn 10s;
+	animation: fadeIn 10s;
 }
