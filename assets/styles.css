@@ -83,7 +83,7 @@ body p {
 .box2 {
 	display: flex;
 	width: 100%;
-	margin-top: 20%;
+	margin-top: 15%;
 }
 
 .box2 .inner {
@@ -109,6 +109,16 @@ body p {
 	color: rgb(205, 229, 236);
 	transform-origin: left;
 	transform: perspective(100px) rotateY(15deg);
+}
+
+.box2 .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box2 .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
 }
 
 .formContainer {
