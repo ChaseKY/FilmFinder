@@ -17,7 +17,7 @@ function getGenre(event) {
 	document.getElementById('sub-container').classList.remove('hide');
 
 	var genreInput = event.target.getAttribute("data-value")
-	fetch(`https://data-imdb1.p.rapidapi.com/movie/byGen/${genreInput}/?page_size=5`, {
+	fetch(`https://data-imdb1.p.rapidapi.com/movie/byGen/${genreInput}/?page_size=50`, {
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "data-imdb1.p.rapidapi.com",
