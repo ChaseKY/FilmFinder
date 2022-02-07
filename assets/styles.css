@@ -179,8 +179,8 @@ button {
 	justify-content: center;
 	align-items: center;
 	background: none;
-	width: auto;
-	height: auto;
+	width: 10vh;
+	height: 7vh;
 	margin: 0;
 	flex: 1;
 	flex-basis: 50%;
