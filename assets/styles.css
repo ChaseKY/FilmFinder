@@ -260,7 +260,7 @@ button {
 }
 
 .R {
-	background-image: url("./Images/r-rating.png");
+	background-image: url("./Images/r-Rating.png");
 	background-size: 100% 100%;
 	cursor: pointer;
 }
@@ -271,7 +271,7 @@ button {
 }
 
 .NC-17 {
-	background-image: url("./Images/nc17-rating.png");
+	background-image: url("./Images/nc17-Rating.png");
 	background-size: 100% 100%;
 	cursor: pointer;
 }
