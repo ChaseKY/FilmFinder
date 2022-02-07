@@ -13,7 +13,12 @@ No installation is required.
 ## Usage
 
 When the page loads the user will see a list of genres to choose from. (Insert pic)
-After selecting a genre the user
+
+After selecting a genre the user will then be able to select a content rating (PG, PG-13, ect.) and a decade from which the movie was released. The user can choose both a content rating and decade or just one of the two.
+
+Then the user will click the search button which will bring them to a page that has the movie results based on the perimeters
+given.
+
 
 ## Credits
 Contributors:
@@ -33,5 +38,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-## Features

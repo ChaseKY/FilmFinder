@@ -194,8 +194,18 @@ button {
 
 }
 
+.G:hover {
+	background-image: url("./Images/g-rating-color.png");
+	background-size: 100% 100%;
+}
+
 .PG {
 	background-image: url("./Images/pg-Rating.png");
+	background-size: 100% 100%;
+}
+
+.PG:hover {
+	background-image: url("./Images/pg-rating-color.png");
 	background-size: 100% 100%;
 }
 
@@ -204,13 +214,28 @@ button {
 	background-size: 100% 100%;
 }
 
+.PG-13:hover {
+	background-image: url("./Images/pg13-rating-color.png");
+	background-size: 100% 100%;
+}
+
 .R {
 	background-image: url("./Images/r-rating.png");
 	background-size: 100% 100%;
 }
 
+.R:hover {
+	background-image: url("./Images/r-rating-color.png");
+	background-size: 100% 100%;
+}
+
 .NC-17 {
 	background-image: url("./Images/nc17-rating.png");
+	background-size: 100% 100%;
+}
+
+.NC-17:hover {
+	background-image: url("./Images/nc17-rating-color.png");
 	background-size: 100% 100%;
 }
 
@@ -322,3 +347,4 @@ button {
 	width: 14.5vh;
 	height: auto;
 }
+
