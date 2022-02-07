@@ -13,7 +13,7 @@ function pullResultsArray() {
         var card = document.createElement('div')
         var poster = document.createElement('img')
         var cardBody = document.createElement('div')
-        var movieTitle = document.createElement('h5')
+        var movieTitle = document.createElement('h3')
         var cardText = document.createElement('p')
         var factList = document.createElement('ul')
         var misc = document.createElement('li') //reviews
