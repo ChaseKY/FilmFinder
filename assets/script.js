@@ -74,17 +74,17 @@ function passAlongData(iD) {
 			console.log(movieArray)
 		})
 }
-var chosenRating;
-var choseYear;
+let chosenRating;
+let choseYear;
 
 function filterChoice() {
 	// console.log(this.value)
 	// console.log(this.getAttribute('value2'))
 
 	if (this.value === 'G'){
-		chosenRating = 'G';
+		chosenRating = 'G'
 		choseYear=''
-		globalThis.chosenRating = 'G'
+		
 	}
 	else if (this.value ==='PG'){
 		chosenRating= 'PG'
@@ -93,6 +93,7 @@ function filterChoice() {
 	else if (this.value ==='PG-13'){
 		chosenRating= 'PG-13'
 		choseYear=''
+	
 	}
 	else if (this.value ==='R'){
 		chosenRating= 'R'
@@ -228,13 +229,19 @@ function filterChoice() {
 		chosenRating= 'NC-17'
 		choseYear= 'year2020-2022'
 	}
-	console.log(userChoiceRating)
-	console.log(userChoiceYear)
-	console.log(userChoiceYear , userChoiceRating)
+	return chosenRating, choseYear
+	
+	console.log(choseYear)
+	console.log(chosenRating)
+	console.log(finalMovieArray)
 }
+console.log(choseYear)
+console.log(chosenRating)
 	
 	
 function finalQuery(chosenRating,choseYear){
+	console.log(chosenRating)
+	console.log(finalMovieArray)
 
 	for (let index = 0; index < movieArray.length; index++) {
 
@@ -278,5 +285,6 @@ function finalQuery(chosenRating,choseYear){
 			}
 		}
 	}	
+	console.log(finalMovieArray)
 	console.log(veryFinalMovieArray)
 }
