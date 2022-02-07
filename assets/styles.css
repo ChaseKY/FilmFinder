@@ -80,6 +80,37 @@ body p {
 	}
 }
 
+.box2 {
+	display: flex;
+	width: 100%;
+	margin-top: 20%;
+}
+
+.box2 .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box2 .inner:first-child {
+	background-color: #40817a;
+	color: #003b32;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box2 .inner:last-child {
+	background-color: #7cbdc9;
+	color: rgb(205, 229, 236);
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
 .formContainer {
 	display: grid;
 	justify-content: center;
@@ -491,4 +522,9 @@ button {
 
 .card {
 	display: inline-flex
+}
+
+#resultsContainer {
+	margin-top: 10%;
+	display: flex;
 }
