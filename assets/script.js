@@ -11,9 +11,7 @@ var searchButton = document.querySelector("#search");
 
 buttons.addEventListener("click", getGenre)
 
-searchButton.addEventListener("click", function() {
-	console.log(searchButton);
-})
+searchButton.addEventListener("click", finalQuery)
 
 function getGenre(event) {
 	document.getElementById('sub-container').classList.remove('hide');
@@ -80,212 +78,205 @@ var chosenRating;
 var choseYear;
 
 function filterChoice() {
-	console.log(this.getAttribute('value'))
-	console.log(this.getAttribute('value2'))
+	// console.log(this.value)
+	// console.log(this.getAttribute('value2'))
 
-
-	if (this.value ==='G'){
-		chosenRating= 'G'
+	if (this.value === 'G'){
+		chosenRating = 'G';
 		choseYear=''
+		globalThis.chosenRating = 'G'
 	}
-	if (this.value ==='PG'){
+	else if (this.value ==='PG'){
 		chosenRating= 'PG'
 		choseYear=''
 	}
-	if (this.value ==='PG-13'){
+	else if (this.value ==='PG-13'){
 		chosenRating= 'PG-13'
 		choseYear=''
 	}
-	if (this.value ==='R'){
+	else if (this.value ==='R'){
 		chosenRating= 'R'
 		choseYear=''
 	}
-	if (this.value ==='NC-17'){
+	else if (this.value ==='NC-17'){
 		chosenRating= 'NC-17'
 		choseYear=''
 	}
 
-	if (this.getAttribute('value2') === 'year1980-1989'){
+	else if (this.getAttribute('value2') === 'year1980-1989'){
 		chosenRating= ''
 		choseYear= 'year1980-1989'
 	}
-	if (this.getAttribute('value2') === 'year1990-1999'){
+	else if (this.getAttribute('value2') === 'year1990-1999'){
 		chosenRating= ''
 		choseYear= 'year1990-1999'
 	}
-	if (this.getAttribute('value2') === 'year2000-2009'){
+	else if (this.getAttribute('value2') === 'year2000-2009'){
 		chosenRating= ''
 		choseYear= 'year2000-2009'
 	}
-	if (this.getAttribute('value2') === 'year2010-2019'){
+	else if (this.getAttribute('value2') === 'year2010-2019'){
 		chosenRating= ''
 		choseYear= 'year2010-2019'
 	}
-	if (this.getAttribute('value2') === 'year2020-2022'){
+	else if (this.getAttribute('value2') === 'year2020-2022'){
 		chosenRating= ''
 		choseYear= 'year2020-2022'
 	}
 
-	if (this.value === 'G' && this.getAttribute('value2') === 'year1980-1989') {
+	else if (this.value === 'G' && this.getAttribute('value2') === 'year1980-1989') {
 		chosenRating= 'G'
 		choseYear= 'year1980-1989'
 	}
-	if (this.value === 'G' && this.getAttribute('value2') === 'year1990-1999') {
+	else if (this.value === 'G' && this.getAttribute('value2') === 'year1990-1999') {
 		chosenRating= 'G'
 		choseYear= 'year1990-1999'
 	}
-	if (this.value === 'G' && this.getAttribute('value2') === 'year2000-2009') {
+	else if (this.value === 'G' && this.getAttribute('value2') === 'year2000-2009') {
 		chosenRating= 'G'
 		choseYear= 'year2000-2009'
 	}
-	if (this.value === 'G' && this.getAttribute('value2') === 'year2010-2019') {
+	else if (this.value === 'G' && this.getAttribute('value2') === 'year2010-2019') {
 		chosenRating= 'G'
 		choseYear= 'year2010-2019'
 	}
-	if (this.value === 'G' && this.getAttribute('value2') === 'year2020-2022') {
+	else if (this.value === 'G' && this.getAttribute('value2') === 'year2020-2022') {
 		chosenRating= 'G'
 		choseYear= 'year2020-2022'
 	}
 
-	if (this.value === 'PG' && this.getAttribute('value2') === 'year1980-1989') {
+	else if (this.value === 'PG' && this.getAttribute('value2') === 'year1980-1989') {
 		chosenRating= 'PG'
 		choseYear= 'year1980-1989'
 	}
-	if (this.value === 'PG' && this.getAttribute('value2') === 'year1990-1999') {
+	else if (this.value === 'PG' && this.getAttribute('value2') === 'year1990-1999') {
 		chosenRating= 'PG'
 		choseYear= 'year1990-1999'
 	}
-	if (this.value === 'PG' && this.getAttribute('value2') === 'year2000-2009') {
+	else if (this.value === 'PG' && this.getAttribute('value2') === 'year2000-2009') {
 		chosenRating= 'PG'
 		choseYear= 'year2000-2009'
 	}
-	if (this.value === 'PG' && this.getAttribute('value2') === 'year2010-2019') {
+	else if (this.value === 'PG' && this.getAttribute('value2') === 'year2010-2019') {
 		chosenRating= 'PG'
 		choseYear= 'year2010-2019'
 	}
-	if (this.value === 'PG' && this.getAttribute('value2') === 'year2020-2022') {
+	else if (this.value === 'PG' && this.getAttribute('value2') === 'year2020-2022') {
 		chosenRating= 'PG'
 		choseYear= 'year2020-2022'
 	}
 
-	if (this.value === 'PG-13' && this.getAttribute('value2') === 'year1980-1989') {
+	else if (this.value === 'PG-13' && this.getAttribute('value2') === 'year1980-1989') {
 		chosenRating= 'PG-13'
 		choseYear= 'year1980-1989'
 	}
-	if (this.value === 'PG-13' && this.getAttribute('value2') === 'year1990-1999') {
+	else if (this.value === 'PG-13' && this.getAttribute('value2') === 'year1990-1999') {
 		chosenRating= 'PG-13'
 		choseYear= 'year1990-1999'
 	}
-	if (this.value === 'PG-13' && this.getAttribute('value2') === 'year2000-2009') {
+	else if (this.value === 'PG-13' && this.getAttribute('value2') === 'year2000-2009') {
 		chosenRating= 'PG-13'
 		choseYear= 'year2000-2009'
 	}
-	if (this.value === 'PG-13' && this.getAttribute('value2') === 'year2010-2019') {
+	else if (this.value === 'PG-13' && this.getAttribute('value2') === 'year2010-2019') {
 		chosenRating= 'PG-13'
 		choseYear= 'year2010-2019'
 	}
-	if (this.value === 'PG-13' && this.getAttribute('value2') === 'year2020-2022') {
+	else if (this.value === 'PG-13' && this.getAttribute('value2') === 'year2020-2022') {
 		chosenRating= 'PG-13'
 		choseYear= 'year2020-2022'
 	}
 
-	if (this.value === 'R' && this.getAttribute('value2') === 'year1980-1989') {
+	else if (this.value === 'R' && this.getAttribute('value2') === 'year1980-1989') {
 		chosenRating= 'R'
 		choseYear= 'year1980-1989'
 	}
-	if (this.value === 'R' && this.getAttribute('value2') === 'year1990-1999') {
+	else if (this.value === 'R' && this.getAttribute('value2') === 'year1990-1999') {
 		chosenRating= 'R'
 		choseYear= 'year1990-1999'
 	}
-	if (this.value === 'R' && this.getAttribute('value2') === 'year2000-2009') {
+	else if (this.value === 'R' && this.getAttribute('value2') === 'year2000-2009') {
 		chosenRating= 'R'
 		choseYear= 'year2000-2009'
 	}
-	if (this.value === 'R' && this.getAttribute('value2') === 'year2010-2019') {
+	else if (this.value === 'R' && this.getAttribute('value2') === 'year2010-2019') {
 		chosenRating= 'R'
 		choseYear= 'year2010-2019'
 	}
-	if (this.value === 'R' && this.getAttribute('value2') === 'year2020-2022') {
+	else if (this.value === 'R' && this.getAttribute('value2') === 'year2020-2022') {
 		chosenRating= 'R'
 		choseYear= 'year2020-2022'
 	}
 
-	if (this.value === 'NC-17' && this.getAttribute('value2') === 'year1980-1989') {
+	else if (this.value === 'NC-17' && this.getAttribute('value2') === 'year1980-1989') {
 		chosenRating= 'NC-17'
 		choseYear= 'year1980-1989'
 	}
-	if (this.value === 'NC-17' && this.getAttribute('value2') === 'year1990-1999') {
+	else if (this.value === 'NC-17' && this.getAttribute('value2') === 'year1990-1999') {
 		chosenRating= 'NC-17'
 		choseYear= 'year1990-1999'
 	}
-	if (this.value === 'NC-17' && this.getAttribute('value2') === 'year2000-2009') {
+	else if (this.value === 'NC-17' && this.getAttribute('value2') === 'year2000-2009') {
 		chosenRating= 'NC-17'
 		choseYear= 'year2000-2009'
 	}
-	if (this.value === 'NC-17' && this.getAttribute('value2') === 'year2010-2019') {
+	else if (this.value === 'NC-17' && this.getAttribute('value2') === 'year2010-2019') {
 		chosenRating= 'NC-17'
 		choseYear= 'year2010-2019'
 	}
-	if (this.value === 'NC-17' && this.getAttribute('value2') === 'year2020-2022') {
+	else if (this.value === 'NC-17' && this.getAttribute('value2') === 'year2020-2022') {
 		chosenRating= 'NC-17'
 		choseYear= 'year2020-2022'
 	}
-	
-	
-
-
-
-
-	// for (let index = 0; index < movieArray.length; index++) {
-
-	// 	if (this.value === movieArray[index].rated) {
-	// 		finalMovieArray.push(movieArray[index])
-	// 	}
-
-
-	// }
-
-	// if (this.value === 'year1980-1989') {
-	// 	for (let index = 0; index < finalMovieArray.length; index++) {
-	// 		if (finalMovieArray[index].year >= 1980 && finalMovieArray[index].year <= 1989) {
-	// 			veryFinalMovieArray.push(finalMovieArray[index])
-	// 		}
-	// 	}
-	// }
-	// if (this.value === 'year1990-1999') {
-	// 	for (let index = 0; index < finalMovieArray.length; index++) {
-	// 		if (finalMovieArray[index].year >= 1990 && finalMovieArray[index].year <= 1999) {
-	// 			veryFinalMovieArray.push(finalMovieArray[index])
-	// 		}
-	// 	}
-	// }
-	// if (this.value === 'year2020-2022') {
-	// 	for (let index = 0; index < finalMovieArray.length; index++) {
-	// 		if (finalMovieArray[index].year >= 2020 && finalMovieArray[index].year <= 2022) {
-	// 			veryFinalMovieArray.push(finalMovieArray[index])
-	// 		}
-	// 	}
-	// }
-	// console.log(veryFinalMovieArray)
-
-	// yearArr.forEach(function(Year){
-	// 	var btn = document.createElement('button');
-	// 	btn.setAttribute('class', `${Year} item ratedBtn`);
-	// 	btn.setAttribute('value', Year)
-
-	// 	btn.onclick = filterChoicesFurther;
-
-	// 	document.getElementById('sub-container2').append(btn)
-	// })
+	console.log(userChoiceRating)
+	console.log(userChoiceYear)
+	console.log(userChoiceYear , userChoiceRating)
 }
+	
+	
+function finalQuery(chosenRating,choseYear){
 
-function filterChoicesFurther() {
-	console.log(this.value)
+	for (let index = 0; index < movieArray.length; index++) {
 
-	for (let index = 0; index < veryFinalMovieArray.length; index++) {
+		if (chosenRating === movieArray[index].rated) {
+			finalMovieArray.push(movieArray[index])
+		}
+		}
 
-		if (finalMovieArray[index].year >= this.value && finalMovieArray[index].year >= this.data - value) {
-
+	if (choseYear === 'year1980-1989') {
+		for (let index = 0; index < finalMovieArray.length; index++) {
+			if (finalMovieArray[index].year >= 1980 && finalMovieArray[index].year <= 1989) {
+				veryFinalMovieArray.push(finalMovieArray[index])
+			}
 		}
 	}
+	else if (choseYear === 'year1990-1999') {
+		for (let index = 0; index < finalMovieArray.length; index++) {
+			if (finalMovieArray[index].year >= 1990 && finalMovieArray[index].year <= 1999) {
+				veryFinalMovieArray.push(finalMovieArray[index])
+			}
+		}
+	}
+	else if (choseYear === 'year2000-2009') {
+		for (let index = 0; index < finalMovieArray.length; index++) {
+			if (finalMovieArray[index].year >= 2000 && finalMovieArray[index].year <= 2009) {
+				veryFinalMovieArray.push(finalMovieArray[index])
+			}
+		}
+	}
+	else if (choseYear === 'year2010-2019') {
+		for (let index = 0; index < finalMovieArray.length; index++) {
+			if (finalMovieArray[index].year >= 2010 && finalMovieArray[index].year <= 2019) {
+				veryFinalMovieArray.push(finalMovieArray[index])
+			}
+		}
+	}
+	else if (choseYear === 'year2020-2022') {
+		for (let index = 0; index < finalMovieArray.length; index++) {
+			if (finalMovieArray[index].year >= 2020 && finalMovieArray[index].year <= 2022) {
+				veryFinalMovieArray.push(finalMovieArray[index])
+			}
+		}
+	}	
+	console.log(veryFinalMovieArray)
 }
