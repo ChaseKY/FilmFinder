@@ -72,6 +72,9 @@ function passAlongData(iD) {
 			//console.log(data)
 			movieArray.push({ title: data.Title, rated: data.Rated, year: data.Year, reviews: data.imdbRating });
 			console.log(movieArray)
+
+			localStorage.setItem('Initial Array', JSON.stringify(movieArray))
+
 		})
 }
 let chosenRating;
@@ -229,7 +232,6 @@ function filterChoice() {
 		chosenRating= 'NC-17'
 		choseYear= 'year2020-2022'
 	}
-	return chosenRating, choseYear
 	
 	console.log(choseYear)
 	console.log(chosenRating)
@@ -288,3 +290,4 @@ function finalQuery(chosenRating,choseYear){
 	console.log(finalMovieArray)
 	console.log(veryFinalMovieArray)
 }
+
