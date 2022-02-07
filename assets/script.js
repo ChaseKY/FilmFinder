@@ -69,8 +69,8 @@ function passAlongData(iD) {
 		})
 		.then(data => {
 
-			//console.log(data)
-			movieArray.push({ title: data.Title, rated: data.Rated, year: data.Year, reviews: data.imdbRating, poster: data.Poster, released: data.Released });
+			console.log(data)
+			movieArray.push({ title: data.Title, rated: data.Rated, year: data.Year, reviews: data.imdbRating, poster: data.Poster, runtime: data.Runtime, released: data.Released, plot: data.Plot});
 			//console.log(movieArray)
 		})
 }
