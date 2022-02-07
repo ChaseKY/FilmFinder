@@ -12,7 +12,7 @@ No installation is required.
 
 ## Usage
 
-When the page loads the user will see a list of genres to choose from. (Insert pic)
+When the page loads the user will see a list of genres to choose from.
 ![Homepage1](assets/Images/homepage1.png)
 After selecting a genre the user will then be able to select a content rating (PG, PG-13, ect.) and a decade from which the movie was released. The user can choose both a content rating and decade or just one of the two.
 ![Homepage2](assets/Images/Homepage2.png)
