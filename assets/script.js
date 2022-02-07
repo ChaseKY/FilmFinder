@@ -69,8 +69,8 @@ function passAlongData(iD) {
 		})
 		.then(data => {
 			
-			//console.log(data)
-			movieArray.push({ title: data.Title, rated: data.Rated, year: data.Year, reviews: data.imdbRating });
+			console.log(data)
+			movieArray.push({ title: data.Title, rated: data.Rated, year: data.Year, reviews: data.imdbRating, poster: data.Poster, released: data.Released });
 			console.log(movieArray)
 
 			localStorage.setItem('Initial Array', JSON.stringify(movieArray))
