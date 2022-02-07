@@ -63,7 +63,7 @@ function getGenre(event) {
 
 function passAlongData(iD) {
 	movieArray = []
-	fetch('http://www.omdbapi.com/?apikey=62f860e8&i=' + iD)
+	fetch('https://www.omdbapi.com/?apikey=62f860e8&i=' + iD)
 		.then(response => {
 			return response.json();
 		})
