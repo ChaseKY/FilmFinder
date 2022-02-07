@@ -488,3 +488,7 @@ button {
 	-webkit-animation: fadeIn 10s;
 	animation: fadeIn 10s;
 }
+
+.card {
+	display: inline-flex
+}

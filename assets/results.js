@@ -6,10 +6,10 @@ window.onload = pullResultsArray
 
 
 
-function pullResultsArray(){
-   //create inject append
+function pullResultsArray() {
 
-   for (let index = 0; index < resultsArray.length; index++) {
+
+    for (let index = 0; index < resultsArray.length; index++) {
         var card = document.createElement('div')
         var poster = document.createElement('img')
         var cardBody = document.createElement('div')
@@ -20,8 +20,7 @@ function pullResultsArray(){
         var misc2 = document.createElement('li') //released
         var misc3 = document.createElement('li') //runtime
 
-        //title: data.Title, rated: data.Rated, year: data.Year, reviews: data.imdbRating, poster: data.Poster, released: data.Released 
-        movieTitle.textContent = resultsArray[index].title  // make a source
+        movieTitle.textContent = resultsArray[index].title
         cardText.textContent = resultsArray[index].plot
         misc.textContent = resultsArray[index].reviews + ' / 10'
         misc2.textContent = resultsArray[index].runtime
@@ -45,9 +44,9 @@ function pullResultsArray(){
         factList.append(misc, misc2, misc3)
 
 
-        
-   }
-    
-    
+
+    }
+
+
 }
 

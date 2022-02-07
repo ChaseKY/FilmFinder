@@ -69,8 +69,8 @@ function passAlongData(iD) {
 		})
 		.then(data => {
 
-			console.log(data)
-			movieArray.push({ title: data.Title, rated: data.Rated, year: data.Year, reviews: data.imdbRating, poster: data.Poster, runtime: data.Runtime, released: data.Released, plot: data.Plot});
+			//console.log(data)
+			movieArray.push({ title: data.Title, rated: data.Rated, year: data.Year, reviews: data.imdbRating, poster: data.Poster, runtime: data.Runtime, released: data.Released, plot: data.Plot });
 			//console.log(movieArray)
 		})
 }
@@ -78,25 +78,25 @@ function passAlongData(iD) {
 
 function getValue() {
 	var valueForYear = this.value
-	console.log(valueForYear)
+	//console.log(valueForYear)
 	localStorage.setItem('year', valueForYear)
 }
 
 
 function getValue2() {
 	var valueForRating = this.value
-	console.log(valueForRating)
+	//console.log(valueForRating)
 	localStorage.setItem('rating', valueForRating)
 }
 
 
 function finalQuery() {
 	var finalUserRating = localStorage.getItem('rating')
-	console.log(finalUserRating)
+	//console.log(finalUserRating)
 	var finalUserYear = localStorage.getItem('year')
-	console.log(finalUserYear)
+	//console.log(finalUserYear)
 
-	console.log(movieArray)
+	//console.log(movieArray)
 
 	for (let index = 0; index < movieArray.length; index++) {
 
@@ -105,7 +105,7 @@ function finalQuery() {
 		}
 	}
 
-	console.log(finalMovieArray)
+	//console.log(finalMovieArray)
 
 	if (finalUserYear === 'year1980-1989') {
 		for (let index = 0; index < finalMovieArray.length; index++) {
@@ -143,7 +143,7 @@ function finalQuery() {
 		}
 	}
 
-	console.log(veryFinalMovieArray)
+	//console.log(veryFinalMovieArray)
 	localStorage.setItem('ResultsArray', JSON.stringify(veryFinalMovieArray))
 	window.location.href = 'results.html';
 }
