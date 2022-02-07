@@ -1,13 +1,5 @@
 /* Title code from https://codepen.io/comehope/pen/GdrrZq */
 
-@font-face {
-	font-family: 'Archive'; src: url("Archive.otf");
-}
-
-/* @font-face {
-	font-family: Archive; font-weight: bold; src: url("Archive.otf");
-} */
-
 h1 {
 	font-family: 'Archive';
 	font-size: 10vh;
@@ -192,6 +184,7 @@ button {
 .G {
 	background-image: url("./Images/g-Rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 
 }
 
@@ -203,6 +196,7 @@ button {
 .PG {
 	background-image: url("./Images/pg-Rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 .PG:hover {
@@ -213,6 +207,7 @@ button {
 .PG-13 {
 	background-image: url("./Images/pg13-rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 .PG-13:hover {
@@ -223,6 +218,7 @@ button {
 .R {
 	background-image: url("./Images/r-rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 .R:hover {
@@ -233,6 +229,7 @@ button {
 .NC-17 {
 	background-image: url("./Images/nc17-rating.png");
 	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 .NC-17:hover {
@@ -243,7 +240,9 @@ button {
 .year1980-1989 {
 	background-image: url("./Images/1980s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
+
 }
 
 .year1980-1989:hover {
@@ -261,7 +260,8 @@ button {
 .year1990-1999 {
 	background-image: url("./Images/1990s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
 }
 
 .year1990-1999:hover {
@@ -279,7 +279,8 @@ button {
 .year2000-2009 {
 	background-image: url("./Images/2000s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
 }
 
 .year2000-2009:hover {
@@ -297,7 +298,8 @@ button {
 .year2010-2019 {
 	background-image: url("./Images/2010s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
 }
 
 .year2010-2019:hover {
@@ -315,7 +317,8 @@ button {
 .year2020-2022 {
 	background-image: url("./Images/2020s.png");
 	background-size: 100% 100%;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: pointer;
 }
 
 .year2020-2022:hover {
